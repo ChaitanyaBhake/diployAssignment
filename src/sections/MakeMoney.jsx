@@ -1,5 +1,5 @@
 import gsap from 'gsap';
-import moneyPlant2 from '../assets/moneyPLant2.svg';
+import moneyPlant2 from '../../src/assets/moneyPlant2.svg';
 import Button from '../common/Button';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
