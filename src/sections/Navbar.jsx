@@ -5,6 +5,8 @@ import mobileLogo from '../assets/mobileLogo.svg';
 import pcLogo from '../assets/pc-logo.svg';
 import Button from '../common/Button';
 import NavItems from '../common/NavItems';
+import hamburgerIcon from "../../src/assets/icons8-hamburger-menu.svg"
+import closeIcon from "../../src/assets/icons8-close.svg"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,7 +34,7 @@ const Navbar = () => {
           <div className="flex lg:gap-5 md:gap-5 gap-3 lg:px-6 md:pl-6">
             {/* Hamburger */}
             <button onClick={handleMenu} className="lg:hidden w-[2rem] ml-5">
-              <img src="/src/assets/icons8-hamburger-menu.svg" alt="hamburger" />
+              <img src={hamburgerIcon} alt="hamburger" />
             </button>
 
             {/* Logo */}
@@ -76,7 +78,7 @@ const Navbar = () => {
                 <h1 className="mx-auto text-2xl">Menu</h1>
                 <div onClick={handleMenu}>
                   <img
-                    src="/src/assets/icons8-close.svg"
+                    src={closeIcon}
                     alt="close"
                     width={15}
                     height={15}
